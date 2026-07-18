@@ -1,7 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
     <div class="container">
 
-        <a class="navbar-brand" href="dashboard.php">
+        <a class="navbar-brand" href="/business-portal/dashboard.php">
             Business Portal
         </a>
 
@@ -19,19 +20,27 @@
             <ul class="navbar-nav ms-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="dashboard.php">Dashboard</a>
+                    <a class="nav-link" href="/business-portal/dashboard.php">
+                        Dashboard
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="customers/index.php">Customers</a>
+                    <a class="nav-link" href="/business-portal/customers/index.php">
+                        Customers
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="products.php">Products</a>
+                    <a class="nav-link" href="/business-portal/products/index.php">
+                        Products
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="sales_orders/index.php">Sales Orders</a>
+                    <a class="nav-link" href="/business-portal/sales_orders/index.php">
+                        Sales Orders
+                    </a>
                 </li>
 
             </ul>
@@ -39,4 +48,5 @@
         </div>
 
     </div>
+
 </nav>

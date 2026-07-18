@@ -157,7 +157,38 @@ LIMIT 5
                         <tr>
                             <td><?php echo $row['full_name']; ?></td>
                             <td><?php echo $row['product_name']; ?></td>
-                            <td><?php echo $row['status']; ?></td>
+                            <td>
+
+                                <?php
+
+                                switch ($row['status']) {
+
+                                    case "Pending":
+
+                                        echo '<span class="badge bg-warning text-dark">Pending</span>';
+
+                                        break;
+
+                                    case "Completed":
+
+                                        echo '<span class="badge bg-success">Completed</span>';
+
+                                        break;
+
+                                    case "Cancelled":
+
+                                        echo '<span class="badge bg-danger">Cancelled</span>';
+
+                                        break;
+
+                                    default:
+
+                                        echo '<span class="badge bg-primary">' . $row['status'] . '</span>';
+                                }
+
+                                ?>
+
+                            </td>
                         </tr>
 
                     <?php } ?>
